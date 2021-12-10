@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Yustice\Yust.csproj" />
+    <ProjectReference Include="..\Yust\Yust.csproj" />
   </ItemGroup>
 
 </Project>
