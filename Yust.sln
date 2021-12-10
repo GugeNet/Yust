@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yust", "Yustice\Yust.csproj", "{7ACC2978-A299-4DE7-BCE4-44A68064FBB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{B4EA1A9A-641A-4BE0-99DD-DC0EC10C100A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A88254F4-5D35-4C84-8D59-6388AF0909E0}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ACC2978-A299-4DE7-BCE4-44A68064FBB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ACC2978-A299-4DE7-BCE4-44A68064FBB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ACC2978-A299-4DE7-BCE4-44A68064FBB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ACC2978-A299-4DE7-BCE4-44A68064FBB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4EA1A9A-641A-4BE0-99DD-DC0EC10C100A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4EA1A9A-641A-4BE0-99DD-DC0EC10C100A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4EA1A9A-641A-4BE0-99DD-DC0EC10C100A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4EA1A9A-641A-4BE0-99DD-DC0EC10C100A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56F26E22-6FA1-4DD6-848D-251B9B4B3F80}
+	EndGlobalSection
+EndGlobal
