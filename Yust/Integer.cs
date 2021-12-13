@@ -12,7 +12,7 @@ namespace EndIf.Yust
             Value = int.Parse(token);
         }
 
-        public override bool Execute(Stack<object> stack)
+        public override bool Execute(Stack<object> stack, IDictionary<string, object> context)
         {
             stack.Push(Value);
             return true;

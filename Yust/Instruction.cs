@@ -6,7 +6,7 @@ namespace EndIf.Yust
     {
         public int Precedence { get; set; } = 0;
 
-        public abstract bool Execute(Stack<object> stack);
+        public abstract bool Execute(Stack<object> stack, IDictionary<string, object> context);
 
         public override string ToString()
         {

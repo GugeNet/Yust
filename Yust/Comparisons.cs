@@ -6,7 +6,7 @@ namespace EndIf.Yust
     [Description(token: "=", precedence: 10)]
     internal class Equal : Instruction
     {
-        public override bool Execute(Stack<object> stack)
+        public override bool Execute(Stack<object> stack, IDictionary<string, object> context)
         {
             var v1 = (IComparable)stack.Pop();
             var v2 = (IComparable)stack.Pop();
@@ -18,7 +18,7 @@ namespace EndIf.Yust
     [Description(token: "<", precedence: 9)]
     internal class LessThan : Instruction
     {
-        public override bool Execute(Stack<object> stack)
+        public override bool Execute(Stack<object> stack, IDictionary<string, object> context)
         {
             var v1 = (IComparable)stack.Pop();
             var v2 = (IComparable)stack.Pop();
@@ -30,7 +30,7 @@ namespace EndIf.Yust
     [Description(token: ">", precedence: 9)]
     internal class MoreThan : Instruction
     {
-        public override bool Execute(Stack<object> stack)
+        public override bool Execute(Stack<object> stack, IDictionary<string, object> context)
         {
             var v1 = (IComparable)stack.Pop();
             var v2 = (IComparable)stack.Pop();

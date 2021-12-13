@@ -30,7 +30,7 @@ namespace EndIf.Yust
             {
                 if (snum.It == ' ')
                     snum.Move();
-                var c = tokens.Count();
+                var c = tokens.Count;
                 foreach (var t in tokenTypes.OrderBy(tt => tt.Description.Precedence))
                 {
                     if (t.BuildFrom(snum, out var token))
@@ -39,7 +39,7 @@ namespace EndIf.Yust
                         break;
                     }
                 }
-                if (c == tokens.Count())
+                if (c == tokens.Count)
                     throw new Exception($"Unknown symbol {snum.It}");
             }
 
@@ -50,12 +50,10 @@ namespace EndIf.Yust
         {
             var i = 0;
 
-            while (tokens[i] is ParenthesesStart && i < tokens.Count())
+            while (tokens[i] is ParenthesesStart && i < tokens.Count)
                 i++;
 
-            var skippedParenthesis = i;
-
-            while (i < tokens.Count() - 1)
+            while (i < tokens.Count - 1)
             {
                 var currentToken = tokens[i];
                 var nextToken = tokens[i + 1];
@@ -64,7 +62,7 @@ namespace EndIf.Yust
                 {
                     var passedParentheses = (nextToken is ParenthesesStart) ? 1 : 0;
                     var j = i + 2;
-                    while (j < tokens.Count())
+                    while (j < tokens.Count)
                     {
                         var afterNextToken = tokens[j];
 

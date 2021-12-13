@@ -5,11 +5,6 @@ namespace Tests
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
-        {
-        }
-
         [TestCase("25*40",   1000)]
         [TestCase("25 + 40",   65)]
         [TestCase("7 + 2 * 3", 13)]  // 7 2 3 * +

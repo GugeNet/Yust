@@ -5,11 +5,9 @@ namespace EndIf.Yust.REPL
 {
     internal class Program
     {
-        const string digits = ".0123456789";
-
-        static void Main(string[] args)
+        static void Main()
         {
-            var expr = "7-(5+1)";
+            var expr = "Age > 22";
 
             var compiler = new Compiler();
 
@@ -34,8 +32,13 @@ namespace EndIf.Yust.REPL
 
             var stack = new Stack<object>();
 
+            var context = new Dictionary<string, object>
+            {
+                { "Age", 25 }
+            };
+
             foreach (var token in tokens)
-                token.Execute(stack);
+                token.Execute(stack, context);
 
             Console.WriteLine();
 
