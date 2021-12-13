@@ -7,7 +7,7 @@ offering another person a salad made from an olive and a traditional vermouth an
 
 Nothing is very finished yet, but the compiler uses a clever trick I found out for myself
 when I was 20 years old and implemented this in BASIC on a 286 PC with MSDOS 3.0!
-It is a little bit like Dijstra's shunting yard, but not quite.
+It is a little bit like Dijkstra's shunting yard, but not quite.
 
 Operator precedence as defined in
 https://en.cppreference.com/w/cpp/language/operator_precedence
