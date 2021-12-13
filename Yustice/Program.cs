@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 
-namespace Yust
+namespace EndIf.Yust.REPL
 {
     internal class Program
     {

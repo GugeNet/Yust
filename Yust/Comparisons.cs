@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Yust
+namespace EndIf.Yust
 {
     [Description(token: "=", precedence: 10)]
     internal class Equal : Instruction

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Yust
+namespace EndIf.Yust
 {
     internal class DescriptionAttribute : Attribute
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Yust
+namespace EndIf.Yust
 {
     [Description(token: "*", precedence: 5)]
     internal class Multiply : Instruction

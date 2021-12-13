@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Yust
+namespace EndIf.Yust
 {
     [Description(token: "+", precedence: 6)]
     internal class Add : Instruction

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Yust
+namespace EndIf.Yust
 {
     [Description(start: "0123456789", precedence: 3)]
     internal class Integer : Instruction

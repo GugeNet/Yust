@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Yust
+namespace EndIf.Yust
 {
     public abstract class Instruction
     {

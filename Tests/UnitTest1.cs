@@ -1,5 +1,5 @@
 using NUnit.Framework;
-using Yust;
+using EndIf.Yust;
 
 namespace Tests
 {
