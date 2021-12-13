@@ -4,6 +4,14 @@
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <Description>A simple expression parser and evaluator</Description>
+    <OutputType>library</OutputType>
+	<PackageId>EndIf.Yust</PackageId>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	<Version>1.0.0-beta</Version>
+	<Authors>Geir E. R. Gundersen</Authors>
+	<Company>End If AS</Company>
+	<PackageDescription>This package expression parser and evaluator</PackageDescription>
+	<RepositoryUrl>https://github.com/GugeNet/Yust</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
