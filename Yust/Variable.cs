@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Yust;
 
 namespace EndIf.Yust
 {
@@ -12,7 +13,7 @@ namespace EndIf.Yust
             VariableName = token;
         }
 
-        public override bool Execute(Stack<object> stack, IDictionary<string,object> context)
+        public override bool Execute(Stack<object> stack, IValueFromKey<string,object> context)
         {
             stack.Push(context[VariableName]);
             return true;
