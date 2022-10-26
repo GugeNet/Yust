@@ -7,7 +7,7 @@
     <OutputType>library</OutputType>
 	<PackageId>EndIf.Yust</PackageId>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<Version>1.1.0-beta</Version>
+	<Version>1.1.1-beta</Version>
 	<Authors>Geir E. R. Gundersen</Authors>
 	<Company>End If AS</Company>
 	<PackageDescription>A tiny parser and expression evaluator using an alternativ to Dijstra's shunting yard algorithm.</PackageDescription>

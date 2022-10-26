@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Yust
+﻿namespace Yust
 {
     public interface IValueFromKey<TKey,TValue>
     {
         //
         // Summary:
-        //     Gets or sets the element with the specified key.
+        //     Gets the element with the specified key.
         //
         // Parameters:
         //   key:
-        //     The key of the element to get or set.
+        //     The key of the element to get.
         //
         // Returns:
         //     The element with the specified key.
@@ -28,6 +22,6 @@ namespace Yust
         //
         //   T:System.NotSupportedException:
         //     The property is set and the System.Collections.Generic.IDictionary`2 is read-only.
-        TValue this[TKey key] { get; set; }
+        TValue this[TKey key] { get; }
     }
 }
