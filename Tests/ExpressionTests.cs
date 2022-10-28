@@ -13,6 +13,8 @@ namespace Tests
         [TestCase("7-5+1",      3)]
         [TestCase("7-5",        2)]
         [TestCase("7-(5+1)",    1)]
+        [TestCase("4/2",        2)]
+        [TestCase("1/3",      1/3)]
         public void TestCalculation(string expression, int result)
         {
             var p = new Proglet<int>(expression);
