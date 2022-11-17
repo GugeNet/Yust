@@ -1,6 +1,6 @@
 ﻿namespace Yust
 {
-    public interface IValueFromKey<TKey,TValue>
+    public interface IValueFromKey<TKey, TValue>
     {
         //
         // Summary:
@@ -23,5 +23,7 @@
         //   T:System.NotSupportedException:
         //     The property is set and the System.Collections.Generic.IDictionary`2 is read-only.
         TValue this[TKey key] { get; }
+
+        bool ContainsKey(TKey key);
     }
 }

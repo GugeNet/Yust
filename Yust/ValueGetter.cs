@@ -12,5 +12,10 @@ namespace Yust
         }
 
         public TValue this[TKey key] { get => dictionary[key]; set => dictionary[key] = value; }
+
+        public bool ContainsKey(TKey key)
+        {
+            return dictionary.ContainsKey(key);
+        }
     }
 }
