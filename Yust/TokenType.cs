@@ -20,12 +20,12 @@ namespace EndIf.Yust
         {
             token = null;
 
-            if(Description.Token == snum.It.ToString())
+            if(snum.ContinuesWith(Description.Token))
             {
                 var constructor = Type.GetConstructor(Type.EmptyTypes);
                 token = constructor.Invoke(new object[] {}) as Instruction;
                 token.Precedence = Description.Precedence;
-                snum.Move();
+                snum.Move(Description.Token.Length);
                 return true;
             }
 
