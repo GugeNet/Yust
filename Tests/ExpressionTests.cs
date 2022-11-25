@@ -27,6 +27,9 @@ namespace Tests
         [TestCase("1>0", true)]
         [TestCase("1<0", false)]
         [TestCase("0<1", true)]
+        [TestCase("4 >= 2", true)]
+        [TestCase("4 <= 2", false)]
+        [TestCase("4 <> 2", true)]
         [TestCase("1<0", false)]
         public void TestComparison(string expression, bool result)
         {

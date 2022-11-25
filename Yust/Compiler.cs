@@ -31,7 +31,7 @@ namespace EndIf.Yust
                 if (snum.It == ' ')
                     snum.Move();
                 var c = tokens.Count;
-                foreach (var t in tokenTypes.OrderBy(tt => tt.Description.Precedence))
+                foreach (var t in tokenTypes.OrderBy(tt => tt.Description.Precedence).OrderByDescending(tt => tt.Description.Token.Length))
                 {
                     if (t.BuildFrom(snum, out var token))
                     {

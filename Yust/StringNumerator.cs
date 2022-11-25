@@ -4,7 +4,6 @@ namespace EndIf.Yust
 {
     internal class StringNumerator
     {
-
         public string String { get; private set; }
 
         private int i = 0;
@@ -20,9 +19,14 @@ namespace EndIf.Yust
             
         public bool Finished => i >= String.Length;
 
-        internal void Move()
+        internal void Move(int length = 1)
         {
-            i++;
+            i += length;
+        }
+
+        internal bool ContinuesWith(string token)
+        {
+            return token.Length > 0 && String[i..].StartsWith(token);
         }
     }
 }
